@@ -1,13 +1,854 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-122936",
-    "name": "Roller_test",
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "MM",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-122936",
+  "name": "Roller_test",
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "id-122937",
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Import",
+      "x": 0.06283068783068783,
+      "y": 0.43732590529247906,
+      "uniqueID": "id-122939",
+      "fileName": "Roller.step",
+      "name": "Import",
+      "type": "STEP",
+      "repoOwner": "BarbourSmith",
+      "repoName": "Roller_test",
+      "SVGwidth": 10
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.20171957671957674,
+      "y": 0.883008356545961,
+      "uniqueID": "id-122956",
+      "name": "148ZZ_Bearing",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-122946",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.48677248677248675,
+          "y": 0.5654596100278552,
+          "uniqueID": "id-122947",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 4
+            }
+          ]
+        },
+        {
+          "atomType": "Add-BOM-Tag",
+          "x": 0.707010582010582,
+          "y": 0.6211699164345404,
+          "uniqueID": "id-122948",
+          "name": "Add BOM Tag",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Item Name",
+              "ioValue": "148ZZ Bearing",
+              "currentEquation": "148ZZ Bearing"
+            },
+            {
+              "name": "Number Needed",
+              "ioValue": 1
+            },
+            {
+              "name": "Cost (USD)",
+              "ioValue": 0.2
+            },
+            {
+              "name": "Source Link",
+              "ioValue": "https://shop.maslowcnc.com/products/148zz-bearing",
+              "currentEquation": "https://shop.maslowcnc.com/products/148zz-bearing"
+            }
+          ],
+          "BOMitem": {
+            "BOMitemName": "148ZZ Bearing",
+            "numberNeeded": 1,
+            "costUSD": 0.2,
+            "source": "https://shop.maslowcnc.com/products/148zz-bearing"
+          }
+        },
+        {
+          "atomType": "GitHubMolecule",
+          "x": 0.3584656084656085,
+          "y": 0.6406685236768802,
+          "uniqueID": "id-122949",
+          "name": "Concentric_Circles",
+          "ioValues": [
+            {
+              "name": "OD",
+              "ioValue": 14
+            },
+            {
+              "name": "ID",
+              "ioValue": 8
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-122950",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-122951",
+              "name": "OD",
+              "type": "number"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.24615384615384617,
+              "uniqueID": "id-122952",
+              "name": "ID",
+              "type": "number"
+            },
+            {
+              "atomType": "Circle",
+              "x": 0.460559796437659,
+              "y": 0.42567567567567566,
+              "uniqueID": "id-122953",
+              "ioValues": [
+                {
+                  "name": "diameter",
+                  "ioValue": 14
+                }
+              ]
+            },
+            {
+              "atomType": "Circle",
+              "x": 0.44529262086514,
+              "y": 0.7263513513513513,
+              "uniqueID": "id-122954",
+              "ioValues": [
+                {
+                  "name": "diameter",
+                  "ioValue": 8
+                }
+              ]
+            },
+            {
+              "atomType": "Difference",
+              "x": 0.6615776081424937,
+              "y": 0.5506756756756757,
+              "uniqueID": "id-122955",
+              "ioValues": [
+                {
+                  "name": "geometry1",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "geometry2",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "diameter",
+              "ap1ID": "id-122951",
+              "ap2ID": "id-122953"
+            },
+            {
+              "ap2Name": "diameter",
+              "ap1ID": "id-122952",
+              "ap2ID": "id-122954"
+            },
+            {
+              "ap2Name": "geometry1",
+              "ap1ID": "id-122953",
+              "ap2ID": "id-122955"
+            },
+            {
+              "ap2Name": "geometry2",
+              "ap1ID": "id-122954",
+              "ap2ID": "id-122955"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-122955",
+              "ap2ID": "id-122950"
+            }
+          ],
+          "parentRepo": {
+            "lastFoundGit": "2026-04-29T10:23:39.190Z",
+            "privateRepo": false,
+            "repoName": "Concentric_Circles",
+            "dateCreated": "2025-11-08T04:08:14Z",
+            "likes": 0,
+            "readMe": "https://raw.githubusercontent.com/BarbourSmith/Concentric_Circles/master/README.md?sanitize=true",
+            "yyyy": 2025,
+            "topMoleculeID": "id-1170",
+            "githubMoleculesUsed": [],
+            "html_url": "https://github.com/BarbourSmith/Concentric_Circles",
+            "topics": [],
+            "parentRepo": null,
+            "forks": 0,
+            "dateModified": "739563",
+            "ranking": 18.9,
+            "searchField": "concentric_circles barboursmith creates two concentric circles. the result is 2d ",
+            "owner": "BarbourSmith",
+            "description": "Creates two concentric circles. The result is 2D",
+            "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Concentric_Circles/master/project.abundance?sanitize=true",
+            "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Concentric_Circles/master/project.svg?sanitize=true",
+            "isLocal": false
+          },
+          "unitsKey": "Unitless",
+          "fileTypeVersion": 1,
+          "lastReloadedFromGithubAt": 1777482957817
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-122947",
+          "ap2ID": "id-122948"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-122948",
+          "ap2ID": "id-122946"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-122949",
+          "ap2ID": "id-122947"
+        }
+      ],
+      "parentRepo": {
+        "privateRepo": false,
+        "repoName": "148ZZ_Bearing",
+        "dateCreated": "2026-04-29T17:15:02Z",
+        "readMe": "https://raw.githubusercontent.com/BarbourSmith/148ZZ_Bearing/master/README.md?sanitize=true",
+        "yyyy": 2026,
+        "topMoleculeID": "id-122862",
+        "githubMoleculesUsed": [
+          {
+            "owner": "BarbourSmith",
+            "repoName": "Concentric_Circles"
+          }
+        ],
+        "html_url": "https://github.com/BarbourSmith/148ZZ_Bearing",
+        "topics": [],
+        "parentRepo": null,
+        "forks": 0,
+        "dateModified": "739735",
+        "ranking": 0,
+        "searchField": "148zz_bearing barboursmith a 148zz bearing ",
+        "owner": "BarbourSmith",
+        "description": "A 148ZZ Bearing",
+        "contentURL": "https://raw.githubusercontent.com/BarbourSmith/148ZZ_Bearing/master/project.abundance?sanitize=true",
+        "svgURL": "https://raw.githubusercontent.com/BarbourSmith/148ZZ_Bearing/master/project.svg?sanitize=true",
+        "isLocal": false
+      },
+      "unitsKey": "MM",
+      "fileTypeVersion": 1,
+      "lastReloadedFromGithubAt": 1777484463444
+    },
+    {
+      "atomType": "Move",
+      "x": 0.3994708994708995,
+      "y": 0.7214484679665739,
+      "uniqueID": "id-122985",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.5548941798941799,
+      "y": 0.31197771587743733,
+      "uniqueID": "id-122991",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 3",
+          "ioValue": null
+        }
+      ]
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.3187830687830688,
+      "y": 0.3064066852367688,
+      "uniqueID": "id-123036",
+      "name": "MR106ZZ-Bearing",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-123029",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.28769841269841273,
+          "y": 0.40668523676880225,
+          "uniqueID": "id-123030",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 10
+            }
+          ]
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.28240740740740744,
+          "y": 0.6908077994428969,
+          "uniqueID": "id-123031",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 6
+            }
+          ]
+        },
+        {
+          "atomType": "Difference",
+          "x": 0.38293650793650796,
+          "y": 0.5821727019498607,
+          "uniqueID": "id-123032",
+          "ioValues": [
+            {
+              "name": "geometry1",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "geometry2",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.4755291005291006,
+          "y": 0.4902506963788301,
+          "uniqueID": "id-123033",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 3
+            }
+          ]
+        },
+        {
+          "atomType": "Color",
+          "x": 0.7890211640211641,
+          "y": 0.5654596100278552,
+          "uniqueID": "id-123034",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "selectedColor": "Light Purple"
+        },
+        {
+          "atomType": "Add-BOM-Tag",
+          "x": 0.5932539682539683,
+          "y": 0.45403899721448465,
+          "uniqueID": "id-123035",
+          "name": "Add BOM Tag",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Item Name",
+              "ioValue": "New Item",
+              "currentEquation": "New Item"
+            },
+            {
+              "name": "Number Needed",
+              "ioValue": 1
+            },
+            {
+              "name": "Cost (USD)",
+              "ioValue": 0
+            },
+            {
+              "name": "Source Link",
+              "ioValue": ""
+            }
+          ],
+          "BOMitem": {
+            "BOMitemName": "New Item",
+            "numberNeeded": 1,
+            "costUSD": 0,
+            "source": ""
+          }
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "geometry1",
+          "ap1ID": "id-123030",
+          "ap2ID": "id-123032"
+        },
+        {
+          "ap2Name": "geometry2",
+          "ap1ID": "id-123031",
+          "ap2ID": "id-123032"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-123032",
+          "ap2ID": "id-123033"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-123033",
+          "ap2ID": "id-123035"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-123034",
+          "ap2ID": "id-123029"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-123035",
+          "ap2ID": "id-123034"
+        }
+      ],
+      "parentRepo": {
+        "lastFoundGit": "2026-04-29T10:23:39.190Z",
+        "repoName": "MR106ZZ-Bearing",
+        "dateCreated": "2024-11-13T19:02:58Z",
+        "likes": 0,
+        "readMe": "https://raw.githubusercontent.com/BarbourSmith/MR106ZZ-Bearing/master/README.md?sanitize=true",
+        "yyyy": 2024,
+        "topMoleculeID": 1731524578011,
+        "githubMoleculesUsed": [],
+        "html_url": "https://github.com/BarbourSmith/MR106ZZ-Bearing",
+        "topics": [],
+        "parentRepo": null,
+        "forks": 0,
+        "dateModified": "739203",
+        "ranking": 3.6,
+        "searchField": "mr106zz-bearing barboursmith",
+        "owner": "BarbourSmith",
+        "description": "A model of a MR106 bearing",
+        "contentURL": "https://raw.githubusercontent.com/BarbourSmith/MR106ZZ-Bearing/master/project.abundance?sanitize=true",
+        "svgURL": "https://raw.githubusercontent.com/BarbourSmith/MR106ZZ-Bearing/master/project.svg?sanitize=true",
+        "isLocal": false
+      },
+      "unitsKey": "MM",
+      "fileTypeVersion": 1,
+      "lastReloadedFromGithubAt": 1777484513114
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.056216931216931214,
+      "y": 0.6685236768802229,
+      "uniqueID": "id-123059",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 50,
+          "currentEquation": "50"
+        },
+        {
+          "name": "y length",
+          "ioValue": 50,
+          "currentEquation": "50"
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.13690476190476192,
+      "y": 0.6768802228412256,
+      "uniqueID": "id-123063",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.22619047619047616,
+      "y": 0.6044568245125348,
+      "uniqueID": "id-123067",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 10,
+          "currentEquation": "10"
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.28835978835978837,
+      "y": 0.5431754874651811,
+      "uniqueID": "id-123073",
+      "ioValues": [
+        {
+          "name": "geometry1",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "geometry2",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.4212962962962963,
+      "y": 0.17548746518105848,
+      "uniqueID": "id-123077",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 7
+        }
+      ]
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.544973544973545,
+      "y": 0.7158774373259054,
+      "uniqueID": "id-123100",
+      "name": "6mm-Magnet",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-123095",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.2863756613756614,
+          "y": 0.47632311977715874,
+          "uniqueID": "id-123096",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 6.4
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.46097883597883593,
+          "y": 0.5125348189415042,
+          "uniqueID": "id-123097",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 3.2
+            }
+          ]
+        },
+        {
+          "atomType": "Add-BOM-Tag",
+          "x": 0.6236772486772487,
+          "y": 0.40111420612813375,
+          "uniqueID": "id-123098",
+          "name": "Add BOM Tag",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Item Name",
+              "ioValue": "New Item",
+              "currentEquation": "New Item"
+            },
+            {
+              "name": "Number Needed",
+              "ioValue": 1
+            },
+            {
+              "name": "Cost (USD)",
+              "ioValue": 0
+            },
+            {
+              "name": "Source Link",
+              "ioValue": ""
+            }
+          ],
+          "BOMitem": {
+            "BOMitemName": "New Item",
+            "numberNeeded": 1,
+            "costUSD": 0,
+            "source": ""
+          }
+        },
+        {
+          "atomType": "Color",
+          "x": 0.7896825396825398,
+          "y": 0.5738161559888579,
+          "uniqueID": "id-123099",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "selectedColor": "Blue"
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-123096",
+          "ap2ID": "id-123097"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-123097",
+          "ap2ID": "id-123098"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-123098",
+          "ap2ID": "id-123099"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-123099",
+          "ap2ID": "id-123095"
+        }
+      ],
+      "parentRepo": {
+        "lastFoundGit": "2026-04-29T10:23:39.190Z",
+        "privateRepo": false,
+        "repoName": "6mm-Magnet",
+        "dateCreated": "2025-03-14T17:03:27Z",
+        "likes": 0,
+        "readMe": "https://raw.githubusercontent.com/BarbourSmith/6mm-Magnet/master/README.md?sanitize=true",
+        "yyyy": 2025,
+        "topMoleculeID": 1741971807158,
+        "githubMoleculesUsed": [],
+        "html_url": "https://github.com/BarbourSmith/6mm-Magnet",
+        "topics": [],
+        "parentRepo": null,
+        "forks": 0,
+        "dateModified": "739398",
+        "ranking": 0.9,
+        "searchField": "6mm-magnet barboursmith a 6mm magnet  ",
+        "owner": "BarbourSmith",
+        "description": "A 6mm magnet ",
+        "contentURL": "https://raw.githubusercontent.com/BarbourSmith/6mm-Magnet/master/project.abundance?sanitize=true",
+        "svgURL": "https://raw.githubusercontent.com/BarbourSmith/6mm-Magnet/master/project.svg?sanitize=true",
+        "isLocal": false
+      },
+      "unitsKey": "MM",
+      "fileTypeVersion": 1,
+      "lastReloadedFromGithubAt": 1777484685395
+    },
+    {
+      "atomType": "Move",
+      "x": 0.6375661375661376,
+      "y": 0.6991643454038997,
+      "uniqueID": "id-123118",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 7
+        }
+      ]
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap2Name": "geometry1",
+      "ap1ID": "id-122939",
+      "ap2ID": "id-123073"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-122956",
+      "ap2ID": "id-122985"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-122985",
+      "ap2ID": "id-122991"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-122991",
+      "ap2ID": "id-122937"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-123036",
+      "ap2ID": "id-123077"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-123059",
+      "ap2ID": "id-123063"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-123063",
+      "ap2ID": "id-123067"
+    },
+    {
+      "ap2Name": "geometry2",
+      "ap1ID": "id-123067",
+      "ap2ID": "id-123073"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-123073",
+      "ap2ID": "id-122991"
+    },
+    {
+      "ap2Name": "Shape 3",
+      "ap1ID": "id-123077",
+      "ap2ID": "id-122991"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-123100",
+      "ap2ID": "id-123118"
+    }
+  ],
+  "unitsKey": "MM",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
