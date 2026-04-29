@@ -3,5 +3,5 @@
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
 |New Item|1|$0.00||
-|148ZZ Bearing|1|$0.20|https://shop.maslowcnc.com/products/148zz-bearing|
-|Total: |2|$0.20| |
+|148ZZ Bearing|2|$0.40|https://shop.maslowcnc.com/products/148zz-bearing|
+|Total: |3|$0.40| |

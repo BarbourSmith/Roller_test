@@ -333,6 +333,10 @@
         {
           "name": "Shape 3",
           "ioValue": null
+        },
+        {
+          "name": "Shape 4",
+          "ioValue": null
         }
       ]
     },
@@ -581,8 +585,8 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.28835978835978837,
-      "y": 0.5431754874651811,
+      "x": 0.2361111111111111,
+      "y": 0.47075208913649025,
       "uniqueID": "id-123073",
       "ioValues": [
         {
@@ -597,8 +601,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.4212962962962963,
-      "y": 0.17548746518105848,
+      "x": 0.4226190476190476,
+      "y": 0.18384401114206128,
       "uniqueID": "id-123077",
       "ioValues": [
         {
@@ -615,7 +619,7 @@
         },
         {
           "name": "zDist",
-          "ioValue": 7
+          "ioValue": 6
         }
       ]
     },
@@ -768,8 +772,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.6375661375661376,
-      "y": 0.6991643454038997,
+      "x": 0.636904761904762,
+      "y": 0.7075208913649026,
       "uniqueID": "id-123118",
       "ioValues": [
         {
@@ -789,6 +793,37 @@
           "ioValue": 7
         }
       ]
+    },
+    {
+      "atomType": "Tag",
+      "x": 0.35383597883597884,
+      "y": 0.5097493036211699,
+      "uniqueID": "id-123125",
+      "name": "Plastic",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "tags": [
+        "Plastic"
+      ]
+    },
+    {
+      "atomType": "ExtractTag",
+      "x": 0.7791005291005292,
+      "y": 0.6740947075208913,
+      "uniqueID": "id-123128",
+      "name": "Extract Tag",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "tag": "Plastic",
+      "tagIndex": 0
     }
   ],
   "allConnectors": [
@@ -803,6 +838,11 @@
       "ap2ID": "id-122985"
     },
     {
+      "ap2Name": "geometry",
+      "ap1ID": "id-122956",
+      "ap2ID": "id-123077"
+    },
+    {
       "ap2Name": "Shape 1",
       "ap1ID": "id-122985",
       "ap2ID": "id-122991"
@@ -814,8 +854,8 @@
     },
     {
       "ap2Name": "geometry",
-      "ap1ID": "id-123036",
-      "ap2ID": "id-123077"
+      "ap1ID": "id-122991",
+      "ap2ID": "id-123128"
     },
     {
       "ap2Name": "geometry",
@@ -833,9 +873,9 @@
       "ap2ID": "id-123073"
     },
     {
-      "ap2Name": "Shape 2",
+      "ap2Name": "geometry",
       "ap1ID": "id-123073",
-      "ap2ID": "id-122991"
+      "ap2ID": "id-123125"
     },
     {
       "ap2Name": "Shape 3",
@@ -846,6 +886,16 @@
       "ap2Name": "geometry",
       "ap1ID": "id-123100",
       "ap2ID": "id-123118"
+    },
+    {
+      "ap2Name": "Shape 4",
+      "ap1ID": "id-123118",
+      "ap2ID": "id-122991"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-123125",
+      "ap2ID": "id-122991"
     }
   ],
   "unitsKey": "MM",
